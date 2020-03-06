@@ -30,7 +30,7 @@
 		"selector": ".menu-item-about",
 		"text": ["你想知道我家主人是誰嗎？", "這裡有一些關於我家主人的秘密哦，要不要看看呢？", "發現主人出沒地點！"]
 	}, {
-		"selector": ".fa-tags",
+		"selector": ".menu-item-tags",
 		"text": ["點擊就可以看文章的標籤啦！", "點擊來查看所有標籤唷。", "快看看這裡都有什麼呢！"]
 	}, {
 		"selector": ".menu-item-categories",
@@ -75,7 +75,7 @@
 		"selector": "a[href^='mailto']",
 		"text": ["郵件我會即時回覆的！", "點擊就可以發送郵件啦～"]
 	}, {
-		"selector": "a[href^='/tags/']",
+		"selector": "a[href^='/tag/']",
 		"text": ["要去看看 <span>{text}</span> 標籤嗎？", "點它可以查看此標籤下的所有文章哟！"]
 	}, {
 		"selector": "a[href^='/categories/']",
