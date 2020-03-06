@@ -108,7 +108,7 @@ function loadWidget(config) {
 			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕陽的景色很美麗呢，最美不過夕陽紅～";
 			else if (now > 19 && now <= 21) text = "晚上好，今天過得怎麼樣？";
 			else if (now > 21 && now <= 23) text = ["已經這麼晚了呀，早點休息吧，晚安～", "深夜時要愛護眼睛呀！"];
-			else text = "你是夜猫子呀？這麼晚還不睡覺，明天起得來嗎？";
+			else text = "你是夜貓子呀？這麼晚還不睡覺，明天起得來嗎？";
 		} else if (document.referrer !== "") {
 			let referrer = new URL(document.referrer),
 				domain = referrer.hostname.split(".")[1];
