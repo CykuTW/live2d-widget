@@ -38,7 +38,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["好久不見，日子過得好快呢……", "大壞蛋！你都多久沒理人家了呀，嗚嗚嗚～", "嗨～快来逗我玩吧！", "拿小拳拳錘你胸口！", "記得把小家加入 Adblock 白名單喔！"];
+		messageArray = ["好久不見，日子過得好快呢……", "大壞蛋！你都多久沒理人家了呀，嗚嗚嗚～", "嗨～快來逗我玩吧！", "拿小拳拳錘你胸口！", "記得把小家加入 Adblock 白名單喔！"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
@@ -102,13 +102,13 @@ function loadWidget(config) {
 		if (location.pathname === "/") { // 如果是主页
 			let now = new Date().getHours();
 			if (now > 5 && now <= 7) text = "早上好！一日之計在於晨，美好的一天就要開始了。";
-			else if (now > 7 && now <= 11) text = "上午好！工作順利嗎，不要久坐，多起来走動走動喔！";
+			else if (now > 7 && now <= 11) text = "上午好！工作順利嗎，不要久坐，多起來走動走動喔！";
 			else if (now > 11 && now <= 13) text = "中午了，工作了一個上午，現在是午餐時間！";
 			else if (now > 13 && now <= 17) text = "午後很容易犯睏呢，今天的運動目標完成了嗎？";
 			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕陽的景色很美麗呢，最美不過夕陽紅～";
 			else if (now > 19 && now <= 21) text = "晚上好，今天過得怎麼樣？";
 			else if (now > 21 && now <= 23) text = ["已經這麼晚了呀，早點休息吧，晚安～", "深夜時要愛護眼睛呀！"];
-			else text = "你是夜猫子呀？這麼晚還不睡覺，明天起得来嗎？";
+			else text = "你是夜猫子呀？這麼晚還不睡覺，明天起得來嗎？";
 		} else if (document.referrer !== "") {
 			let referrer = new URL(document.referrer),
 				domain = referrer.hostname.split(".")[1];
